@@ -1,25 +1,83 @@
+// .benefits {
+// }
+
+// .benefits__list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: $card-set-gap;
+// }
+
+// .benefits__item {
+//   flex-basis: calc((100% - 90px) / 4);
+// }
+
+// .benefits__icon {
+//   fill: $main-text-color;
+
+//   &-container {
+//     background-color: $second-bc;
+//     height: 120px;
+
+//     margin-bottom: 30px;
+//     border-radius: 4px;
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// }
+
+// .benefits__title {
+//   @extend %visually-hidden;
+// }
+
+// .benefits__subtitle {
+//   margin-top: 0;
+//   margin-bottom: 10px;
+//   margin-right: 0;
+
+//   font-size: 14px;
+//   line-height: 1.14;
+//   text-transform: uppercase;
+// }
+
+// .benefits__text {
+//   margin-top: 0;
+//   margin-bottom: 0;
+
+//   color: $second-text-color;
+//   display: inline-block;
+//   width: 270px;
+//   height: 72px;
+//   line-height: 1.71;
+// }
+
 .benefits {
 }
 
 .benefits__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: $card-set-gap;
+}
+.benefits__item:first-child {
+  margin-top: 60px;
 }
 
 .benefits__item {
-  flex-basis: calc((100% - 90px) / 4);
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .benefits__icon {
   fill: $main-text-color;
 
   &-container {
-    background-color: $second-bc;
     height: 120px;
+    width: 450px;
 
-    margin-bottom: 30px;
     border-radius: 4px;
+
+    background-color: $second-bc;
 
     display: flex;
     align-items: center;
@@ -32,9 +90,12 @@
 }
 
 .benefits__subtitle {
-  margin-top: 0;
-  margin-bottom: 10px;
-  margin-right: 0;
+  display: inline-block;
+
+  margin-bottom: 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 14px;
   line-height: 1.14;
@@ -42,12 +103,11 @@
 }
 
 .benefits__text {
-  margin-top: 0;
+  margin-top: 10;
   margin-bottom: 0;
 
   color: $second-text-color;
-  display: inline-block;
-  width: 270px;
-  height: 72px;
+  width: 450px;
+  height: 50px;
   line-height: 1.71;
 }
