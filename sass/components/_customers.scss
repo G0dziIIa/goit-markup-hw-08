@@ -44,16 +44,16 @@
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  // gap: $card-set-gap;
+  gap: $card-set-gap;
+  justify-content: center;
 }
 
 .customers__item {
-  width: calc(100% / 2);
+  width: calc(100% / 2 - 30px);
 }
 
 .customers__link {
   display: flex;
-  // width: 170px;
   height: 92px;
 
   color: #afb1b8;
