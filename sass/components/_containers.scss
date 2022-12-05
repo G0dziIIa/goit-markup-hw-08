@@ -6,11 +6,6 @@
 //   width: 1200px;
 // }
 
-// .container-header {
-//   display: flex;
-//   align-items: center;
-// }
-
 // .footer__container {
 //   display: flex;
 //   align-items: baseline;
@@ -40,4 +35,9 @@
   // align-items: baseline;
   flex-direction: column;
   align-items: center;
+}
+
+.container-header {
+  display: flex;
+  // align-items: center;
 }

@@ -25,11 +25,24 @@
     <!-- Header -->
     <header class="page-header">
       <div class="container container-header">
-        <nav class="page-header__nav">
-          <a lang="en" class="page-header__logo logo link" href="./index.html"
-            ><span class="logo__span">Web</span>Studio</a
-          >
+        <a lang="en" class="page-header__logo logo link" href="./index.html"
+          ><span class="logo__span">Web</span>Studio</a
+        >
+        <button
+          class="header-button header-button--is-open"
+          aria-label="Перемикач мобільного меню"
+          aria-expanded="false"
+          type="button"
+          data-menu-button
+        >
+          <svg width="40" height="40">
+            <use class="header-button__cross" href="./images/icons-svg.svg#nav-menu-close"></use>
+            <use class="header-button__menu" href="./images/icons-svg.svg#nav-menu"></use>
+          </svg>
+        </button>
 
+        <div class="header-menu" data-menu>aaaaaaaaaaaaa</div>
+        <nav class="page-header__nav">
           <ul class="site-nav list">
             <li class="item site-nav__item">
               <a class="site-nav__link link current" href="./index.html">Студія</a>
@@ -37,7 +50,9 @@
             <li class="item site-nav__item">
               <a class="site-nav__link link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="item site-nav__item"><a class="site-nav__link link" href="">Контакти</a></li>
+            <li class="item site-nav__item">
+              <a class="site-nav__link link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
 
@@ -524,5 +539,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
