@@ -26,7 +26,7 @@
   transition-property: background-color, box-shadow, fill, -webkit-box-shadow;
 }
 
-.body {
+body {
   margin: 0;
   padding-top: 60px;
   font-family: "Roboto", sans-serif;
@@ -54,12 +54,16 @@ button {
   cursor: pointer;
   font-family: inherit;
   color: #ffffff;
+  -webkit-transition-property: background-color, fill, -webkit-box-shadow;
+  transition-property: background-color, fill, -webkit-box-shadow;
+  transition-property: background-color, box-shadow, fill;
+  transition-property: background-color, box-shadow, fill, -webkit-box-shadow;
 }
 
 img {
   display: block;
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .container {
@@ -150,19 +154,23 @@ img {
 }
 
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 118px;
-  padding-bottom: 60px;
+  padding-bottom: 118px;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {
-  height: 400px;
-  max-width: 480px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team-mob.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-mob.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team-mob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-mob.jpg);
 }
 
 .hero__title {
+  margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
   font-size: 26px;
