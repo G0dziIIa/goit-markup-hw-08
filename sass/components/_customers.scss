@@ -36,6 +36,7 @@
 
 .customers {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .customers__title {
 }
@@ -49,7 +50,15 @@
 }
 
 .customers__item {
-  width: calc(100% / 2 - 30px);
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .customers__link {
