@@ -53,14 +53,46 @@
 
 .activity {
   display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .activity__title {
+  margin-bottom: 50px;
 }
 .activity__list {
+  display: flex;
+  gap: $card-set-gap;
 }
 .activity__item {
+  position: relative;
+
+  width: calc((100% - 60px) / 3);
 }
 .activity__container-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  text-align: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
 }
 .activity__text {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: $bc;
+
+  text-transform: uppercase;
 }
