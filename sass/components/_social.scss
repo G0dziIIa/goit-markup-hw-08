@@ -114,8 +114,12 @@
 
 .social-footer__text {
   display: block;
+  margin-bottom: 20px;
+
   text-transform: uppercase;
   color: $bc;
 
-  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }

@@ -72,6 +72,10 @@
 .footer-form {
   text-align: center;
   width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
 }
 
 .footer-form__text {
@@ -85,11 +89,15 @@
   color: #fff;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer-form__email {
   height: 50px;
-  width: 450px;
+  width: 100%;
 
   padding-top: 15px;
   padding-bottom: 15px;
@@ -105,6 +113,10 @@
 
   border: 1px solid #ffffff4d;
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer-form__button {
@@ -138,5 +150,8 @@
   &:hover {
     background-color: $second-accent;
     box-shadow: 0px 4px 4px 0px #00000026;
+  }
+
+  @media screen and (min-width: 1200px) {
   }
 }
