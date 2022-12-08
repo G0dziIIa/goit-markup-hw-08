@@ -112,6 +112,10 @@
 
   background-color: $bc;
   border: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
 }
 
 .page-header__nav {
@@ -123,17 +127,27 @@
   color: #000000;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .header-button {
-  margin-left: 10px;
-  background-color: #fff;
+  margin-left: 20px;
+  // margin-left: auto;
+  background-color: aquamarine;
 
   &--is-open .header-button__cross {
     display: block;
   }
 
   &--is-open .header-button__menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -154,8 +168,8 @@
 }
 
 .header-menu {
-  width: 100%;
-  top: 100%;
+  // width: 100%;
+  // top: 100%;
   position: absolute;
   background-color: blueviolet;
   // text-align: center;
@@ -164,7 +178,86 @@
 
 .site-nav {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+
+    gap: 51px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
+
+.site-nav__link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  align-items: center;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $main-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
 .auth-nav {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    margin-left: auto;
+
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    gap: 40px;
+  }
+}
+
+.auth-nav__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: $second-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.auth-nav__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
