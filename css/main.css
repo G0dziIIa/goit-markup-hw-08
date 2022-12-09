@@ -423,14 +423,20 @@ img {
   display: none;
 }
 
-.header-menu {
+.container-menu {
   position: absolute;
   top: 100%;
   left: 0;
+  padding: 10px;
   width: 100%;
   height: 796px;
-  background-color: blueviolet;
-  opacity: 0.5;
+  display: none;
+  background-color: burlywood;
+  text-align: center;
+  color: black;
+}
+.container-menu.is-open {
+  display: block;
 }
 
 .site-nav {

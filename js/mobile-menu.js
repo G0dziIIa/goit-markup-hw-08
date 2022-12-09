@@ -8,6 +8,6 @@
     menuBtnRef.classList.toggle('is-open');
     menuBtnRef.setAttribute('aria-expanded', !expanded);
 
-    mobileMenuRef.classList.toggle('header-menu');
+    mobileMenuRef.classList.toggle('is-open');
   });
 })();

@@ -174,20 +174,29 @@
   display: none;
 }
 
-.header-button__menu {
-}
+// .header-button__menu {
+// }
 
-.header-menu {
+.container-menu {
   position: absolute;
   top: 100%;
   left: 0;
 
+  padding: 10px;
+
   width: 100%;
   height: 796px;
 
-  background-color: blueviolet;
-  // text-align: center;
-  opacity: 0.5;
+  display: none;
+  background-color: burlywood;
+  text-align: center;
+  // opacity: 0.5;
+
+  color: black;
+
+  &.is-open {
+    display: block;
+  }
 }
 
 .site-nav {
