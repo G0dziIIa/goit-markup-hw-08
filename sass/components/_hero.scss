@@ -70,8 +70,33 @@
 }
 
 .overlay {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/team-mob.jpg);
+  background-image: $gra, url(../images/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: $gra, url(../images/hero-bg-mob-x2.jpg);
+  }
+
+  @include mobile {
+    background-image: $gra, url(../images/hero-bg-tab.jpg);
+
+    @include retina {
+      background-image: $gra, url(../images/hero-bg-tab-x2.jpg);
+    }
+  }
+
+  @include tablet {
+    background-image: $gra, url(../images/hero-bg.jpg);
+
+    @include retina {
+      background-image: $gra, url(../images/hero-bg-x2.jpg);
+    }
+  }
+
+  // @include desktop {
+  // }
 }
 
 .hero__title {
@@ -90,7 +115,7 @@
   color: $bc;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 44px;
     line-height: 1.36;
     width: 696px;

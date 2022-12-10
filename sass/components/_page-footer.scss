@@ -55,19 +55,19 @@
 }
 
 .container-footer {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     justify-content: space-between;
   }
 }
 
 .container-address-social {
-  @media screen and (min-width: 768px) {
+  @mixin tablet {
     display: flex;
     justify-content: space-around;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: contents;
   }
 }
@@ -75,7 +75,7 @@
 .footer-nav {
   text-align: center;
   margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 0;
   }
 }
@@ -86,7 +86,7 @@
   display: block;
   margin-bottom: 28px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     text-align: start;
   }
 }
@@ -101,7 +101,7 @@
 .addres__list {
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     text-align: start;
   }
 }

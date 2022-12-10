@@ -67,7 +67,7 @@
 }
 
 .benefits__item {
-  @media screen and (min-width: 768px) {
+  @mixin tablet {
     width: calc((100% - 30px) / 2);
   }
 
@@ -79,7 +79,7 @@
 .benefits__item + .benefits__item {
   margin-top: 30px;
 
-  @media screen and (min-width: 768px) {
+  @mixin tablet {
     margin-top: 0;
   }
 }
@@ -114,7 +114,7 @@
   line-height: 1.14;
   text-transform: uppercase;
 
-  @media screen and (min-width: 768px) {
+  @mixin tablet {
     text-align: start;
   }
 }
