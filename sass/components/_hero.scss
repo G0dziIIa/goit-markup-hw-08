@@ -76,14 +76,14 @@
   background-size: cover;
 
   @include retina {
-    background-image: $gra, url(../images/hero-bg-mob-x2.jpg);
+    background-image: $gra, url(../images/hero-bg-mob-2x.jpg);
   }
 
   @include mobile {
     background-image: $gra, url(../images/hero-bg-tab.jpg);
 
     @include retina {
-      background-image: $gra, url(../images/hero-bg-tab-x2.jpg);
+      background-image: $gra, url(../images/hero-bg-tab-2x.jpg);
     }
   }
 
@@ -91,7 +91,7 @@
     background-image: $gra, url(../images/hero-bg.jpg);
 
     @include retina {
-      background-image: $gra, url(../images/hero-bg-x2.jpg);
+      background-image: $gra, url(../images/hero-bg-2x.jpg);
     }
   }
 
