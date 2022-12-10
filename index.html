@@ -147,14 +147,23 @@
               <div class="activity__container-text">
                 <p class="activity__text activity__text">Десктопні додатки</p>
               </div>
-              <img
-                class=""
-                srcset="./images/activity1.jpg 1x, ./images/activity1-2x.jpg 2x"
-                src="./images/activity1.jpg"
-                alt="Написання коду на планшеті"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/activity1.jpg 1x, ./images/activity1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <!-- <source srcset="./images/activity1.jpg 1x, ./images/activity1-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+                <source srcset="./images/activity1.jpg 1x, ./images/activity1-2x.jpg 2x"
+                  media="(mфч-width: 767px)"/> -->
+                <img
+                  class=""
+                  src="./images/activity1.jpg"
+                  alt="Написання коду на планшеті"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </li>
 
             <li class="activity__item">
