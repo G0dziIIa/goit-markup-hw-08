@@ -60,7 +60,7 @@
   margin-top: 30px;
   padding-bottom: 60px;
 
-  @mixin tablet {
+  @include tablet {
     padding-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
@@ -85,12 +85,12 @@
   & + .team-list__item {
     margin-top: 30px;
 
-    @mixin tablet {
+    @include tablet {
       margin: 0;
     }
   }
 
-  @mixin tablet {
+  @include tablet {
     width: calc((100% - 30px) / 2);
     height: 536px;
   }
@@ -106,7 +106,7 @@
   height: 460px;
   background-color: darkslategray;
 
-  @mixin tablet {
+  @include tablet {
     width: 100%;
     height: 374px;
   }

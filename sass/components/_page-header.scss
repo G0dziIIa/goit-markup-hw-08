@@ -113,7 +113,7 @@
   background-color: $bc;
   border: 1px solid #ececec;
 
-  @mixin tablet {
+  @include tablet {
     height: 80px;
   }
 }
@@ -121,7 +121,7 @@
   display: flex;
   align-items: center;
 
-  @mixin tablet {
+  @include tablet {
     height: 80px;
   }
 }
@@ -135,7 +135,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
-  @mixin tablet {
+  @include tablet {
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -153,7 +153,7 @@
   //   display: none;
   // }
 
-  @mixin tablet {
+  @include tablet {
     display: none;
   }
 }
@@ -202,7 +202,7 @@
 .site-nav {
   display: none;
 
-  @mixin tablet {
+  @include tablet {
     display: flex;
     margin-left: 88px;
 
@@ -234,7 +234,7 @@
 }
 
 .site-nav__item .current {
-  @mixin tablet {
+  @include tablet {
     position: relative;
     color: $accent;
 
@@ -256,7 +256,7 @@
 .auth-nav {
   display: none;
 
-  @mixin tablet {
+  @include tablet {
     display: flex;
     flex-direction: column;
 

@@ -62,7 +62,7 @@
 }
 
 .container-address-social {
-  @mixin tablet {
+  @include tablet {
     display: flex;
     justify-content: space-around;
   }
