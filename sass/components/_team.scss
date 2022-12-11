@@ -101,21 +101,20 @@
   }
 }
 
-.team-imgblock {
-  width: 100%;
-  height: 460px;
-  background-color: darkslategray;
+// .team-imgblock {
+//   width: 100%;
+//   height: 460px;
+//   background-color: darkslategray;
 
-  @include tablet {
-    width: 100%;
-    height: 374px;
-  }
+//   @include tablet {
+//     width: 100%;
+//     height: 374px;
+//   }
 
-  @include desktop {
-    width: 100%;
-    height: 260px;
-  }
-}
+//   @include desktop {
+//     display: none;
+//   }
+// }
 
 .team-card {
   margin-top: 30px;

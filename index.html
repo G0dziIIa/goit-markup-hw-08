@@ -42,7 +42,39 @@
           </svg>
         </button>
 
-        <div class="container-menu" data-menu id="container-menu">MENU</div>
+        <div class="menu" data-menu id="menu">
+          <nav class="page-header__nav">
+            <ul class="site-nav list">
+              <li class="item site-nav__item">
+                <a class="site-nav__link link current" href="./index.html">Студія</a>
+              </li>
+              <li class="item site-nav__item">
+                <a class="site-nav__link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="item site-nav__item">
+                <a class="site-nav__link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="auth-nav list">
+            <li class="item auth-nav__item">
+              <a class="link auth-nav__link" href="mailto:info@devstudio.com"
+                ><svg class="auth-nav__icon" width="16" height="12">
+                  <use href="./images/icons-svg.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item auth-nav__item">
+              <a class="link auth-nav__link" href="tel:+380961111111"
+                ><svg class="auth-nav__icon" width="10" height="16">
+                  <use href="./images/icons-svg.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+
         <nav class="page-header__nav">
           <ul class="site-nav list">
             <li class="item site-nav__item">
@@ -147,23 +179,14 @@
               <div class="activity__container-text">
                 <p class="activity__text activity__text">Десктопні додатки</p>
               </div>
-              <picture>
-                <source
-                  srcset="./images/activity1.jpg 1x, ./images/activity1-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <!-- <source srcset="./images/.jpg 1x, ./images/.jpg 2x"
-                  media="(min-width: 768px)"/>
-                <source srcset="./images/.jpg 1x, ./images/.jpg 2x"
-                  media="(max-width: 767px)"/> -->
-                <img
-                  class=""
-                  src="./images/activity1.jpg"
-                  alt="Написання коду на планшеті"
-                  width="370"
-                  height="294"
-                />
-              </picture>
+              <img
+                class=""
+                srcset="./images/activity1.jpg 1x, ./images/activity1-2x.jpg 2x"
+                src="./images/activity1.jpg"
+                alt="Написання коду на планшеті"
+                width="370"
+                height="294"
+              />
             </li>
 
             <li class="activity__item">
@@ -175,7 +198,7 @@
                 srcset="./images/activity2.jpg 1x, ./images/activity2-2x.jpg 2x"
                 src="./images/activity2.jpg"
                 alt="Праця за комп'ютером"
-                width="370"
+                width="374"
                 height="294"
               />
             </li>
@@ -203,13 +226,26 @@
           <h2 class="team__title section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <div class="team-imgblock"></div>
-              <!-- <img
-                src="./images/igor.jpg"
-                alt="Усміхнений хлопець у коричневій сорочці"
-                width="270"
-                height="260"
-              /> -->
+              <picture>
+                <source
+                  srcset="./images/igor.jpg 1x, ./images/igor-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/igor-tab.jpg 1x, ./images/igor-tab-2x.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/igor-mob.jpg 1x, ./images/igor-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/igor-mob.jpg"
+                  alt="Усміхнений хлопець у коричневій сорочці"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-card">
                 <h3 class="team-card__title">Ігор Дем'яненко</h3>
                 <p class="team-card__text" lang="en">Product Designer</p>
@@ -243,13 +279,25 @@
             </li>
 
             <li class="team-list__item">
-              <div class="team-imgblock"></div>
-              <!-- <img
-                src="./images/olga.jpg"
-                alt="Усміхнена дівчина у піджаку"
-                width="270"
-                height="260"
-              /> -->
+              <picture>
+                <source
+                  srcset="./images/olga.jpg 1x, ./images/olga-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/olga-tab.jpg 1x, ./images/olga-tab-2x.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/olga-mob.jpg 1x, ./images/olga-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/olga-mob.jpg"
+                  alt="Усміхнений хлопець у коричневій сорочці"
+                  width="450"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Ольга Рєпіна</h3>
                 <p class="team-card__text" lang="en">Frontend Developer</p>
@@ -283,13 +331,25 @@
             </li>
 
             <li class="team-list__item">
-              <div class="team-imgblock"></div>
-              <!-- <img
-                src="./images/mikola.jpg"
-                alt="Усміхнений хлопець у білій сорочці"
-                width="270"
-                height="260"
-              /> -->
+              <picture>
+                <source
+                  srcset="./images/mikola.jpg 1x, ./images/mikola-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/mikola-tab.jpg 1x, ./images/mikola-tab-2x.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/mikola-mob.jpg 1x, ./images/mikola-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/mikola-mob.jpg"
+                  alt="Усміхнений хлопець у коричневій сорочці"
+                  width="450"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Микола Тарасов</h3>
                 <p class="team-card__text" lang="en">Marketing</p>
@@ -323,13 +383,25 @@
             </li>
 
             <li class="team-list__item">
-              <div class="team-imgblock"></div>
-              <!-- <img
-                src="./images/mykhailo.jpg"
-                alt="Усміхнений хлопець у чорній футболці"
-                width="270"
-                height="260"
-              /> -->
+              <picture>
+                <source
+                  srcset="./images/mykhailo.jpg 1x, ./images/mykhailo-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/mykhailo-tab.jpg 1x, ./images/mykhailo-tab-2x.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/mykhailo-mob.jpg 1x, ./images/mykhailo-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/mykhailo-mob.jpg"
+                  alt="Усміхнений хлопець у коричневій сорочці"
+                  width="450"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Михайло Єрмаков</h3>
                 <p class="team-card__text" lang="en">UI Designer</p>
