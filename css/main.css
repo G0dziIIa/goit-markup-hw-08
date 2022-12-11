@@ -512,7 +512,7 @@ img {
   margin-right: 10px;
 }
 
-.menu {
+.mob-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -531,7 +531,7 @@ img {
   text-align: center;
   color: black;
 }
-.menu.is-open {
+.mob-menu.is-open {
   display: block;
 }
 
