@@ -512,6 +512,18 @@ img {
   margin-right: 10px;
 }
 
+.mob-menu-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto;
+}
+
 .mob-menu {
   position: fixed;
   top: 0;
@@ -533,6 +545,112 @@ img {
 }
 .mob-menu.is-open {
   display: block;
+}
+
+.menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 32px;
+}
+
+.menu-site-nav__link {
+  display: block;
+  padding: 0;
+  color: #212121;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.current {
+  color: #2196f3;
+}
+
+.menu-auth-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-top: auto;
+}
+
+.menu-auth-nav__link--small {
+  display: block;
+  color: #757575;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+}
+
+.menu-auth-nav__link--big {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  text-decoration: none;
+  color: #2196f3;
+}
+
+.menu-auth-nav__icon {
+  display: none;
+}
+
+.menu-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 64px;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.menu-social__item {
+  position: relative;
+}
+
+.menu-social__item:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  top: 40%;
+  left: 100%;
+  width: 22px;
+  height: 0;
+  rotate: -90deg;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social__link {
+  text-decoration: none;
+  color: #2196f3;
 }
 
 .header-button {
