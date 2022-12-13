@@ -155,8 +155,10 @@
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
-  width: 370px;
+
+  @include mobile {
+    width: 370px;
+  }
 }
 
 .order-field {
@@ -243,9 +245,11 @@
 }
 
 .order-conditions {
-  height: 24px;
   display: inline-flex;
+  margin-bottom: 30px;
   align-items: center;
+
+  height: 24px;
   color: $second-text-color;
 
   font-size: 12px;
@@ -284,15 +288,12 @@
 }
 
 .modal__button-order {
-  // margin-left: 125px;
-
   height: 50px;
   width: 200px;
 
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-align: center;
 
   background-color: $accent;
 
