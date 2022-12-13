@@ -77,7 +77,7 @@
 .overlay {
   background-image: $gra, url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
 
   @include retina {

@@ -74,7 +74,7 @@
   margin-right: auto;
 
   text-align: center;
-  width: 450px;
+  min-width: 450px;
 
   @include desktop {
     width: 570px;
