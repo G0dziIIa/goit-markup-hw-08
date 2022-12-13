@@ -50,6 +50,10 @@ body {
 
   color: $main-text-color;
   background-color: $bc;
+
+  @include tablet {
+    padding-top: 80px;
+  }
 }
 
 .link {

@@ -54,8 +54,8 @@
 // }
 
 .hero {
-  // max-width: 1600px;
-  // max-height: 600px;
+  max-width: 1600px;
+  max-height: 600px;
 
   margin-left: auto;
   margin-right: auto;
@@ -67,12 +67,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .overlay {
   background-image: $gra, url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 
   @include retina {
