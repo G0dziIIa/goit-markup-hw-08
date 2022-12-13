@@ -29,6 +29,10 @@
   opacity: 1;
   transition: opacity 250ms $timing-function;
   z-index: 1;
+
+  // padding-left: 15px;
+  // padding-right: 15px;
+  overflow-y: scroll;
 }
 
 .backdrop--is-hidden {
