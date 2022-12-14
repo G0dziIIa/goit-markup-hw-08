@@ -194,6 +194,8 @@
 }
 
 .order-field__input {
+  position: relative;
+
   padding-left: 42px;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -217,8 +219,8 @@
 
 .order__icon {
   position: absolute;
-  top: 50%;
-  left: 5%;
+  top: 11px;
+  left: 12px;
 
   transform: translate(-50%, -50%);
 }

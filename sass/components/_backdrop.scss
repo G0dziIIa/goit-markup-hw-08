@@ -30,7 +30,6 @@
   transition: opacity 250ms $timing-function;
   z-index: 1;
 
-  padding: 93px 15px 0px 15px;
   overflow-y: scroll;
 
   @include mobile {
