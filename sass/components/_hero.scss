@@ -86,18 +86,17 @@
 
   @include mobile {
     background-image: $gra, url(../images/hero-bg-tab.jpg);
-
-    @include retina {
-      background-image: $gra, url(../images/hero-bg-tab-2x.jpg);
-    }
+  }
+  @include retina {
+    background-image: $gra, url(../images/hero-bg-tab-2x.jpg);
   }
 
   @include tablet {
     background-image: $gra, url(../images/hero-bg.jpg);
+  }
 
-    @include retina {
-      background-image: $gra, url(../images/hero-bg-2x.jpg);
-    }
+  @include retina {
+    background-image: $gra, url(../images/hero-bg-2x.jpg);
   }
 
   //  @include desktop {
