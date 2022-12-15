@@ -120,6 +120,10 @@
       transform: translate(-50%, -50%) scale(0.5) rotate(180deg);
     }
   }
+
+  @include desktop {
+    width: 528px;
+  }
 }
 
 .modal__button-close {
@@ -158,8 +162,16 @@
   line-height: 1.5;
   text-align: center;
 
+  border: 4px;
+
   @include mobile {
     width: 370px;
+  }
+
+  @include desktop {
+    width: 448px;
+    margin-bottom: 12px;
+    line-height: calc(23.44 / 20);
   }
 }
 .subscribe-form {
