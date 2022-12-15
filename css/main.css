@@ -346,6 +346,16 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section--scnd {
+  padding-bottom: 24px;
+}
 
 .section-title {
   margin: 0;
@@ -793,6 +803,11 @@ img {
   color: #ffffff;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
@@ -830,6 +845,11 @@ img {
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    padding: 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .benefits__item {
@@ -839,6 +859,7 @@ img {
 @media screen and (min-width: 1200px) {
   .benefits__item {
     width: calc((100% - 90px) / 4);
+    padding: 0;
   }
 }
 
@@ -948,6 +969,11 @@ img {
   margin: 0;
   padding-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    padding: 0;
+  }
+}
 
 .team-list {
   margin-top: 30px;
@@ -966,11 +992,11 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team-list {
-    padding-bottom: 94px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 30px;
+    padding: 0;
   }
 }
 
@@ -1103,7 +1129,7 @@ img {
 }
 
 .customers__list {
-  margin-top: 30px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

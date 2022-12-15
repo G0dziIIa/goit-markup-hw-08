@@ -55,6 +55,10 @@
 .team__title {
   margin: 0;
   padding-top: 60px;
+
+  @include desktop {
+    padding: 0;
+  }
 }
 .team-list {
   margin-top: 30px;
@@ -68,9 +72,9 @@
   }
 
   @include desktop {
-    padding-bottom: 94px;
     display: flex;
     gap: $card-set-gap;
+    padding: 0;
   }
 }
 

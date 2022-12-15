@@ -21,6 +21,15 @@
 .section {
   font-size: 14px;
   line-height: 1.71;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section--scnd {
+  padding-bottom: 24px;
 }
 
 .section-title {

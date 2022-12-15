@@ -64,6 +64,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: $card-set-gap;
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .benefits__item {
@@ -73,6 +77,7 @@
 
   @include desktop {
     width: calc((100% - 90px) / 4);
+    padding: 0;
   }
 }
 
